@@ -15,7 +15,7 @@ ADD . /code
 RUN crontab /code/crontabfile
 
 #安装rsyslog
-RUN apt-get -y install rsyslog
+RUN apt-get -y install rsyslog curl
 
 #复制crontabfile到/etc/crontab
 RUN cp /code/crontabfile /etc/crontab
